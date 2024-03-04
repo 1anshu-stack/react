@@ -40,6 +40,13 @@ JSX power you can render html element using JS.
 Hooks:-
 usestate:- it is responsible for change(dont mean update a value) in state this change propogate into our UI(DOM)
 
+useCallBack:- is a React hook that lets you cache a function definition between re-renders.
+useCallBack will try to memorise the function as much as it can(it may memorise full function) 
+
+useEffect:- 
+
+
+
 
 
 
