@@ -45,9 +45,9 @@ useCallBack will try to memorise the function as much as it can(it may memorise 
 
 useEffect:- 
 
-
-
-
+ReactRouterDom:- 
+Link:- link is use in place of anchor(a) tag because when ever a tag is used it reload the page.
+NavLink:- className{({isActive})=> {isActive ? "text-orange-700":"text-gray-700"}}; basically it tell you about currenct page you are on.
 
 
 
