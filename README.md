@@ -50,4 +50,15 @@ Link:- link is use in place of anchor(a) tag because when ever a tag is used it 
 NavLink:- className{({isActive})=> {isActive ? "text-orange-700":"text-gray-700"}}; basically it tell you about currenct page you are on.
 
 
+StateManagement.
+ContextApi:- 
+creating a global object and put all the data
+create a file with UserContext.js(global object)
+every context is a provider
+<UserContext>
+<Login />
+<Card />
+</UserContext>
+every component inside usercontext can get access to global component
 
+Context:- after creating context it will give a provider(bcoz context is basically providing a variable)
