@@ -62,3 +62,9 @@ every context is a provider
 every component inside usercontext can get access to global component
 
 Context:- after creating context it will give a provider(bcoz context is basically providing a variable)
+
+
+
+Enviroment variable:- React environment variables play a crucial role in maintaining the security of your React application. They allow you to store sensitive data, such as API keys, database credentials, and other confidential information, outside your codebase.
+
+A Service or a database where only your application can talk. react is a frontend libary anythink writen here will ship from javascript into browser and there are the way to get all data from that browser. So, there are some variable created as system variable we have a different way to store them when you deploy your application (vercel) they have there secret manager we will have to copy past that value as it is.
