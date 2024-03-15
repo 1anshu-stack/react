@@ -68,3 +68,7 @@ Context:- after creating context it will give a provider(bcoz context is basical
 Enviroment variable:- React environment variables play a crucial role in maintaining the security of your React application. They allow you to store sensitive data, such as API keys, database credentials, and other confidential information, outside your codebase.
 
 A Service or a database where only your application can talk. react is a frontend libary anythink writen here will ship from javascript into browser and there are the way to get all data from that browser. So, there are some variable created as system variable we have a different way to store them when you deploy your application (vercel) they have there secret manager we will have to copy past that value as it is.
+
+Concept called vender wright:- if you have to change authentication from appwrite to any "firebase you own database" then also your application work fine. So, there is a concept of servies(class) to achive this.
+
+In this servies we export some method what inside that method nobody care about that just tell me what data do you want use my method that's it.
