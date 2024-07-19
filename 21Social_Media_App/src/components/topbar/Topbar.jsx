@@ -3,7 +3,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import FaceSharpIcon from '@mui/icons-material/FaceSharp';
+import person from "../../assets/person/1.jpeg"
 
 export default function Topbar(){
     return (
@@ -37,7 +37,7 @@ export default function Topbar(){
                             <span className="topbarIconBadge">1</span>
                         </div>
                     </div>
-                    <FaceSharpIcon />
+                    <img src={person} alt="person" className="topbarImg"/>
                 </div>
            </div>
         </>

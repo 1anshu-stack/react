@@ -1,13 +1,14 @@
 import "./sidebar.css"
-import RssFeedIcon from '@mui/icons-material/RssFeedIcon';   
+import RssFeedIcon from '@mui/icons-material/RssFeed';
 import BookmarksIcon from '@mui/icons-material/Bookmarks';
-import ChatIcon from '@mui/icons-material/Bookmarks';
-import VideocamIcon from '@mui/icons-material/Bookmarks';
-import GroupsIcon from '@mui/icons-material/Bookmarks';
-import QuestionAnswerIcon from '@mui/icons-material/Bookmarks';
-import WorkIcon from '@mui/icons-material/Bookmarks';
-import EventIcon from '@mui/icons-material/Bookmarks';
-import SchoolIcon from '@mui/icons-material/Bookmarks';
+import ChatIcon from '@mui/icons-material/Chat';
+import VideocamIcon from '@mui/icons-material/Videocam';
+import GroupsIcon from '@mui/icons-material/Groups';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import WorkIcon from '@mui/icons-material/Work';
+import EventIcon from '@mui/icons-material/Event';
+import SchoolIcon from '@mui/icons-material/School';
+import person2 from "../../assets/person/2.jpeg"
 
 export default function Sidebar() {
     return (
@@ -16,7 +17,7 @@ export default function Sidebar() {
                 <div className="sidebarWrapper">
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                            <RssFeedIcon className="slidebarIcon" />
+                            <RssFeedIcon className="sidebarIcon" />
                             <span className="sidebarListItemText">Feed</span>
                         </li>
                         <li className="sidebarListItem">
@@ -52,8 +53,60 @@ export default function Sidebar() {
                             <span className="sidebarListItemText">Courses</span>
                         </li>
                     </ul>
+                    <button className="sidebarBtn">Show More</button>
+                    <hr className="sidebarHr" />
+                    <ul className="sidebarFriendList">
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                        <li className="sidebarFriend">
+                            <img src={person2} alt="" className="sidebarFriendImg" />
+                            <span className="sidebarFriendName">Jane Doe</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </>
+            </div> 
+        </> 
     )
 }

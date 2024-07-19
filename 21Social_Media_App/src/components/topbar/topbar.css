@@ -85,3 +85,11 @@
     justify-content: center;
     font-size: 12px;
 }
+
+.topbarImg {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
