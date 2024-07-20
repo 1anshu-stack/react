@@ -1,4 +1,5 @@
 import "./post.css";
+import propType from "prop-types"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import person1 from "../../assets/person/1.jpeg"
 import post1 from "../../assets/post/1.jpeg"
@@ -7,7 +8,12 @@ import heart from "../../assets/heart.png"
 // import { Users } from "../../dummyData";
 // import { useState } from "react";
 
-export default function Post() {
+Post.propType = {
+  post : propType.node,
+}
+
+export default function Post( {post} ) {
+  console.log(post);
   return (
     <div className="post">
       <div className="postWrapper">
@@ -19,7 +25,7 @@ export default function Post() {
               alt=""
             />
             <span className="postUsername">Emma Stone</span>
-            <span className="postDate">5min ago</span>
+            <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
             <MoreVertIcon />
@@ -27,18 +33,18 @@ export default function Post() {
         </div>
 
         <div className="postCenter">
-          <span className="postText">Hey! it&aposs my first post:)</span>
-          <img className="postImg" src={post1} alt="" />
+          <span className="postText">{post?.desc}</span>
+          <img className="postImg" src={post.photo} alt="" />
         </div>
 
         <div className="postBottom">
           <div className="postBottomLeft">
             <img className="likeIcon" src={like} alt="" />
             <img className="likeIcon" src={heart} alt="" />
-            <span className="postLikeCounter">69 people like it</span>
+            <span className="postLikeCounter">{post.like} people like it</span>
           </div>
           <div className="postBottomRight">
-            <span className="postCommentText">29 comments</span>
+            <span className="postCommentText">{post.comment} comments</span>
           </div>
         </div>
 
