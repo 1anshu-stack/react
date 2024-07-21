@@ -10,7 +10,7 @@ export default function Topbar(){
         <>
            <div className="topbarContainer">
                 <div className="topbarLeft">
-                    <span className="logo">LamaSocial</span>
+                    <span className="logo">YourSocial</span>
                 </div>
                 <div className="topbarCenter">
                     <div className="searchBar">
