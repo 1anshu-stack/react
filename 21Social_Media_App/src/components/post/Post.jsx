@@ -2,10 +2,9 @@ import "./post.css";
 import propType from "prop-types"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import person1 from "../../assets/person/1.jpeg"
-import post1 from "../../assets/post/1.jpeg"
 import like from "../../assets/like.png"
 import heart from "../../assets/heart.png"
-// import { Users } from "../../dummyData";
+import { Users } from "../../dummyData";
 // import { useState } from "react";
 
 Post.propType = {
@@ -13,7 +12,8 @@ Post.propType = {
 }
 
 export default function Post( {post} ) {
-  console.log(post);
+  const users = Users.filter(u=>u.id === 1);
+  console.log(users[0].username);
   return (
     <div className="post">
       <div className="postWrapper">
@@ -21,10 +21,12 @@ export default function Post( {post} ) {
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src={person1}
+              src={Users.filter((u)=> u.id === post?.userId)[0].profilePicture}
               alt=""
             />
-            <span className="postUsername">Emma Stone</span>
+            <span className="postUsername">
+              {Users.filter((u)=> u.id === post?.userId)[0].username}
+            </span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
